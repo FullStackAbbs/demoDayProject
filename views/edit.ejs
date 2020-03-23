@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <style media="screen">
+      body{ background: url("./img/profileBKGND.png" )left top / cover no-repeat;
+    }
+    </style>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="edit-body ">
+    <h1 class="page-header text-center">Edit a Note</h1>
+    <section class="text-center">
+      <h2><%= note.title %></h2>
+      <textarea class="center" name="name" rows="10" cols="50"><%= note.notebody %></textarea>
+    </section>
+    <section class="text-center">
+        <button type="submit" name="button">Save Changes</button>
+    </section>
+  </body>
+</html>

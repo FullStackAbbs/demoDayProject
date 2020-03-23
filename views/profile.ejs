@@ -1,0 +1,78 @@
+
+
+<!doctype html>
+<html>
+
+<head>
+  <title>TradeWorld</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <style media="screen">
+    body{ background: url("./img/profileBKGfND.png" )left top / cover no-repeat;
+  }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <section class="text-left page-header">
+      <h1>Welcome to TradingWorld  <%= user.local.email %></h1>
+    </section>
+    <section class="row">
+      This first section will be used for users to track which financial instruments they want to use and
+      set a price alert number, which will be used for the Tradingview Market API. Anytime, the API reports back the exact number of the price alert
+      the user set, an alert message with appear on the screen (or whatever particular Market Call was trigged will appear a different style than the rest)
+
+      <!-- <section class="JournalList">
+        <h3>PAST EXPERIENCES</h3>
+        <span>Anytime you want to reflect on past thoughts, we are here for you : </span>
+        <ul class="messages">
+          <% for(var i=0; i<notes.length; i++) {%>
+          <li class="message">
+            <strong><span id="JournTitle"><%= notes[i].title %></span></strong>
+            <button data-user="<%= user.local.email %>" class="editButton">Save Changes</button>
+            <i data-user="<%= user.local.email %>" class="far fa-trash-alt"></i><br>
+            <span contenteditable="true" ><%= notes[i].notebody %></span>
+          </li>
+          <% } %>
+        </ul>
+      </section> -->
+      <!-- <section class="JournalEntry">
+        <h2>Inhale for 6s. Pause for 2s. Exhale for 4s.... now what's on your mind </h2>
+        <% if (user.local.email) { %>
+        <form action="/notes" method="POST">
+          <input class="userName" type="text" name="userName" value="<%= user.local.email %>"><br>
+          <!-- <input class="userName" type="text" name="userName" value="<%= user.local.email %>"> -->
+          <!-- <label for="noteTitle">Current Mood: </label><br>
+          <input class="noteTitle" type="text" value="" name="noteTitle"><br>
+          <label for="noteBody">Current Experience </label><br>
+          <textarea class="noteBody" rows="10" cols="50" placeholder="How do you feel in this present moment ?" name="noteBody"></textarea><br>
+          <button type="submit">Submit</button>
+        </form> -->
+        <% } %>
+      </section> -->
+    </section>
+    <section>
+      This is where the TradingView market API again because it will give users the chances to view real live market chart.
+
+    </section>
+
+    <section>
+      Here will be a discussion board, close to the 21Savage Message Board. This message board will allow users to post their own techinical anaylsis while
+      being able to vote on others and their trading anaylsis.
+    </section>
+    <section>
+      BONUS, not part of the MVP. This section will be reserved for quizzed documentation, giving people who are not familiar with Technical anaylsis the chance to learn and test their knowledge.
+      
+    </section>
+    <a href="/logout" class="btn btn-default btn-sm" id="button1">Logout</a>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
